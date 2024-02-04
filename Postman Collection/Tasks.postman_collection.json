@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "58b55381-c3a5-4513-b576-ce147fe87f2d",
+		"name": "Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31842320"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "john",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "pass",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmtpcmF0QGdtYWlsLmNvbSIsImlhdCI6MTcwMzA5NTczN30.WhQQ2rVklDqMl9k06pwxKf90LLGmMKav5Rv-QgYCsa4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"taskId\" : 789,\r\n    \"taskName\" : \"Upload data\",\r\n    \"description\" : \"Upload it in .js file\",\r\n    \"dueDate\" : \"1/10/23\",\r\n    \"taskStatus\" : false,\r\n    \"user\" : \"John\",\r\n    \"project\" : \"data\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/tasks/789",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "john",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "pass",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmtpcmF0QGdtYWlsLmNvbSIsImlhdCI6MTcwMzA5NTczN30.WhQQ2rVklDqMl9k06pwxKf90LLGmMKav5Rv-QgYCsa4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"taskId\" : 456,\r\n    \"taskName\" : \"Upload data\",\r\n    \"description\" : \"Upload it in .js file\",\r\n    \"dueDate\" : \"1/10/23\",\r\n    \"taskStatus\" : false,\r\n    \"user\" : \"John\",\r\n    \"project\" : \"data\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/tasks/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "john",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "pass",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmtpcmF0QGdtYWlsLmNvbSIsImlhdCI6MTcwMzA5NTczN30.WhQQ2rVklDqMl9k06pwxKf90LLGmMKav5Rv-QgYCsa4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"taskId\" : 123,\r\n    \"taskName\" : \"Upload data\",\r\n    \"description\" : \"Upload it in .js file\",\r\n    \"dueDate\" : \"1/10/23\",\r\n    \"taskStatus\" : false,\r\n    \"user\" : \"John\",\r\n    \"project\" : \"data\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/tasks/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "john",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "pass",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmtpcmF0QGdtYWlsLmNvbSIsImlhdCI6MTcwMzA5NTczN30.WhQQ2rVklDqMl9k06pwxKf90LLGmMKav5Rv-QgYCsa4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"taskId\" : 456,\r\n    \"taskName\" : \"Upload data\",\r\n    \"description\" : \"Upload it in .js file\",\r\n    \"dueDate\" : \"1/10/23\",\r\n    \"taskStatus\" : false,\r\n    \"user\" : \"John\",\r\n    \"project\" : \"data\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/tasks/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/tasks/123",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "john",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "pass",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmtpcmF0QGdtYWlsLmNvbSIsImlhdCI6MTcwMzA5NTczN30.WhQQ2rVklDqMl9k06pwxKf90LLGmMKav5Rv-QgYCsa4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"taskId\" : 456,\r\n    \"taskName\" : \"Upload data\",\r\n    \"description\" : \"Upload it in .js file\",\r\n    \"dueDate\" : \"1/10/23\",\r\n    \"taskStatus\" : false,\r\n    \"user\" : \"John\",\r\n    \"project\" : \"data\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/tasks/123"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "john",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "pass",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmtpcmF0QGdtYWlsLmNvbSIsImlhdCI6MTcwMzA5NTczN30.WhQQ2rVklDqMl9k06pwxKf90LLGmMKav5Rv-QgYCsa4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"taskId\" : 456,\r\n    \"taskName\" : \"Upload data\",\r\n    \"description\" : \"Upload it in .js file\",\r\n    \"dueDate\" : \"1/10/23\",\r\n    \"taskStatus\" : false,\r\n    \"user\" : \"John\",\r\n    \"project\" : \"data\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/tasks"
+			},
+			"response": []
+		}
+	]
+}
